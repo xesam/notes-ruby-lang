@@ -15,4 +15,4 @@ end
 Person::say
 # Person::fn :xpy
 Person.new.say
-Person.new.fn :xpy
+Person.new.fn 'xpy'
