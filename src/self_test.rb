@@ -1,18 +1,18 @@
 class Person
     def self.say
-        print "say 1\n"
+        puts "say 1"
     end
 
     def say
-        print "say 2\n"
+        puts "say 2"
     end
 
     define_method :fn do |name|
-        print "#{name} 2\n"
+        puts "#{name} 2"
     end
 end
 
 Person::say
-# Person::fn :xpy
+# Person::fn 'xpy'
 Person.new.say
 Person.new.fn 'xpy'

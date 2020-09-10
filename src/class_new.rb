@@ -1,9 +1,9 @@
 Klass = Class.new do
-    def say()
+    def say
         puts 'hello 1'
-    end 
+    end
 
-    def self.say()
+    def self.say
         puts 'hello 2'
     end
 end
