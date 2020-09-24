@@ -1,12 +1,23 @@
 Klass = Class.new do
-    def say
-        puts 'hello 1'
+    def ins_fn
     end
 
-    def self.say
-        puts 'hello 2'
+    def self.cls_fn
     end
 end
 
-Klass.new.say
-Klass.say
+puts (Klass.instance_methods false).to_s
+puts (Klass.public_methods false).to_s
+
+Klass.class_eval do
+    def ins_fn_2
+    end
+end
+
+Klass.instance_eval do
+    def cls_fn_2
+    end
+end
+
+puts (Klass.instance_methods false).to_s
+puts (Klass.public_methods false).to_s
